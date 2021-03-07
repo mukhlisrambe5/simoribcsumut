@@ -16,6 +16,11 @@ class Fungsi{
 
     }
 
+    public function count_wait(){
+        $this->ci->load->model('rekoms_m');
+        return $this->ci->rekoms_m->get_wait()->num_rows();
+    }
+
     public function count_semua(){
         $this->ci->load->model('rekoms_m');
         return $this->ci->rekoms_m->get()->num_rows();

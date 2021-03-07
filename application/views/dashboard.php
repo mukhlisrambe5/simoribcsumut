@@ -12,6 +12,17 @@
 
     <!-- Main content -->
     <section class="content">
+
+    <!-- Menampilkan jumlah rekomendasi yang sudah ditindaklanjuti dan menunggu respon admin-->
+    <div class="row" 
+     style=" color:white; 
+     font-size:20px;
+     text-shadow: 2px 2px green;
+     margin-left: 5px">
+      <span style="font-weight:bold; font-size:24px; text-shadow: 2px 2px red "><?=$this->fungsi->count_wait()?></span> rekomendasi telah ditanggapi/ditindaklanjuti dan menunggu respon Admin.
+    </div>
+    <hr>
+
     <?php if($this->fungsi->user_login()->level == 1) { ?>
     <div class="row">
         <div class="col-lg-3 col-xs-6">
